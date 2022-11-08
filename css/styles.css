@@ -62,6 +62,7 @@ body {
 }
 .header-contacts {
     margin-left: auto;
+    display: flex;
 }
 .phone {
     margin-left: 50px;
@@ -83,21 +84,27 @@ body {
 .active-link:hover, .active-link:focus {
     color: var(--secondary-color);
 }
+.header-details{
+    color: var(--primary-lightgray-color);
+    display: flex;
+    align-items: center;
+}
+.header-details:hover, 
+.header-details:focus {
+    color: var(--secondary-color);
+}
+.header-icon {
+    margin-right: 10px;
+}
+
 .contacts {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--primary-lightgray-color);
     text-decoration: none;
     list-style: none;
     font-style: normal;
-}
-.contacts:hover, .contacts:focus {
-    color: var(--secondary-color);
-}
-.header-icon {
-    margin-right: 10px;
 }
 
 /* Hero */
@@ -248,6 +255,7 @@ body {
     flex-basis: calc((100% - 90px) / 4);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    background-color: var(--main-color);
 }
 .team-info:not(:first-child) {
     margin-left: 30px;
@@ -287,6 +295,10 @@ body {
 }
 .team-container .social-item:last-child {
     margin-right: 0;
+}
+
+.team-position {
+    border-color: var(--main-color);
 }
 .social-lists {
     justify-content: center;
@@ -330,23 +342,34 @@ body {
     width: 170px;
     height: 92px;
     border: 1px solid #afb1b8;
-    fill: rgba(175, 177, 184, 1);
+    color: rgba(175, 177, 184, 1);
     border-radius: 4px;
     align-items: center;
     justify-content: center;
 }
 
-.link-icon:hover {
-    fill: var(--secondary-color);
+.link-icon:hover, 
+.link-icon:focus
+ {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
 }
 .clients-icon {
-padding: 16px, 32px;
+    padding: 16px, 32px;
+    fill: currentColor;
 }
 
 /*Fotter*/
 .footer {
     background-color: #2F303A;
     padding: 60px 0;
+    display: flex;
+}
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+.logo-address {
     display: flex;
 }
 .address-info {
@@ -381,7 +404,6 @@ padding: 16px, 32px;
 }
 .links-container {
     display: flex;
-    padding-left: 70px;
     align-items: flex-start;
 }
 .footer-txt {

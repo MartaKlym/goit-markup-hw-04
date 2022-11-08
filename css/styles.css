@@ -93,7 +93,6 @@ body {
     margin-right: 10px;
     fill: currentColor;
 }
-
 .header-details:hover, 
 .header-details:focus {
     color: var(--secondary-color);

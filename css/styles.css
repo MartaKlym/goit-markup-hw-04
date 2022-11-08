@@ -89,12 +89,14 @@ body {
     display: flex;
     align-items: center;
 }
+.header-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
 .header-details:hover, 
 .header-details:focus {
     color: var(--secondary-color);
-}
-.header-icon {
-    margin-right: 10px;
 }
 
 .contacts {

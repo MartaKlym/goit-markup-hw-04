@@ -303,7 +303,7 @@ body {
 }
 .social-lists {
     justify-content: center;
-    margin-top: 16px;
+
 }
 .social-link {
     width: 100%;
@@ -370,9 +370,6 @@ body {
     display: flex;
     align-items: baseline;
 }
-.logo-address {
-    display: flex;
-}
 .address-info {
     padding-top: 20px;
 }
@@ -413,29 +410,25 @@ body {
     line-height: 1.2;
     letter-spacing: 0.03em;
     vertical-align: top;
-    width: 16px;
-    height: 116px;
     padding-left: 0;
 }
 
 .social-info {
-    display: flex;
     padding-left: 70px;
 }
 .social-lists {
-    display: flex;    
+    display: flex; 
+    padding-bottom: 30px;  
+    padding-top: 16px;
 }
-.social-lists .social-item {
+.social-item {
     width: 44px;
     height: 44px;
     background-color:rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-}
-.social-item {
     margin-right: 10px;
-    margin-top: 20px;
-}
 
+}
 .social-lists .social-item:last-child {
     margin-right: 0;
 }
